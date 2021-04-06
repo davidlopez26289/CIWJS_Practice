@@ -58,7 +58,7 @@ console.log(linear(sortedArr, 40));//40 steps in 40
 const binary = (arr, target) => {
     let start = 0;
     let end = arr.length;
-    let pivot = math.floor((start + end) / 2);
+    let pivot = Math.floor((start + end) / 2);
     let steps = 0;
 
     for(let i = 0; i < arr.length; i++){
@@ -78,3 +78,18 @@ const binary = (arr, target) => {
 console.log(linear(unsortedArr, 40)); // Nothing Found
 console.log(binary(sortedArr, 44));//2 steps in 7 miliseconds
 console.log(binary(sortedArr, 43));//5 steps in 8 miliseconds
+
+
+//Leet code Problem 9//
+
+
+
+
+
+//Leet code Problem 34//
+
+
+
+
+
+//Leet code Problem 412//
