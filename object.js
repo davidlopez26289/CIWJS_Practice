@@ -132,3 +132,15 @@
 // }
 // var avg = total / 100;
 // console.log(avg);
+
+function Student(name,id,gradelevel,currentgrade){
+        this.name  = name;
+        this.id = id;
+        this.gradelevel = gradelevel;
+        this.currentgrade = currentgrade;
+        this.admin = false;
+}
+
+let David = new Student("David Lopez", "222", "12", "85");
+
+console.log(David);

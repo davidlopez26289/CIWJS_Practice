@@ -1,19 +1,22 @@
 let ladder = {
+    step = 0,
+    max = 5,
     up(){
-        return this.a + 1;
+        if(this.step !== this.max){
+            this.step++;
+        } else{
+            alert("max height is reached");
+        }
     },
 
     down(){
-        return this.b - 1;
+        return this.step--;
     },
 
-    showStep(){
-        this.a = +prompt('a?', 0);
-        this.b = +prompt('b?', 0);
-    }
+    showStep: function(){
+        console.log(this.step);
+    },
 };
 
-ladder.up();
-ladder.up();
-ladder.down();
-ladder.showStep();
+ladder.height(5)
+ladder.up().up().down().showStep();
