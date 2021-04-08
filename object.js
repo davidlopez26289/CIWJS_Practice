@@ -133,14 +133,47 @@
 // var avg = total / 100;
 // console.log(avg);
 
-function Student(name,id,gradelevel,currentgrade){
-        this.name  = name;
-        this.id = id;
-        this.gradelevel = gradelevel;
-        this.currentgrade = currentgrade;
-        this.admin = false;
-}
+// function Student(name, id, gradelevel, currentgrade) {
+//         this.name = name;
+//         this.id = id;
+//         this.gradelevel = gradelevel;
+//         this.currentgrade = currentgrade;
+//         this.admin = false;
+//         this.graduate = function () {
+//                 return this.gradelevel++;
+//         }
+//         this.whiteList = function(){
+//                 this.admin = true;
+//         }
+//         this.setGrade = function(value) {
+//                 this.currentGrade = value;
+//         }
+// };
 
-let David = new Student("David Lopez", "222", "12", "85");
+// let David = new Student('David Lopez', 222, 12, 85);
 
-console.log(David);
+// console.log(David);
+
+class Rectangle {
+        constructor(width, length){
+            this.width = width;
+            this.length = length;
+        }
+        get area(){
+                return this.width * this.length;
+        }
+    }
+    const rect1 = new Rectangle(10, 5);
+    const rect2 = new Rectangle(6, 12);
+    const rect3 = new Rectangle(15, 20);
+    //how to access getter method
+    const area = [rect1.area, rect2.area, rect3.area];
+
+    class Circle {  
+        set radius(radius){
+            this._radius = radius;
+            this.area = 3.14 * Math.pow(radius, 2);
+            this.circumference = 2*(3.14)*radius;
+      }
+    }
+    const circ = new Circle(); 
